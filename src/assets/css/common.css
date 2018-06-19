@@ -1,0 +1,46 @@
+html,
+body,
+#app,
+.contain{
+  width: 100%;
+  height: 100%;
+}
+.contain{
+  overflow-x: hidden; 
+}
+.page-survey{
+  width: 100%;
+  padding: 0rem 0.4rem;
+  text-align: left;
+}
+input[type='radio'],
+input[type='checkbox']{
+  width: 0.4rem;
+  height: 0.4rem;
+  border:1px solid #000;
+}
+input[type='radio']:checked,
+input[type='checkbox']:checked{
+  border:1px solid #ff0000;
+}
+#submit{
+  width: 3rem;
+  height: 0.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: green;
+  color:#fff;
+  font-size: 0.24rem;
+  margin:0 auto;
+}
+#name{
+  width: 100%;
+  height: 0.6rem;
+  padding-left:0.2rem;
+  color:#000;
+  border:1px solid #000;
+}
+.item{
+  margin:0.2rem 0rem;
+}
