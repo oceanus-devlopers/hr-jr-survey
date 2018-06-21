@@ -1,27 +1,44 @@
 html,
 body,
-#app,
-.contain{
+#app{
   width: 100%;
   height: 100%;
 }
 .contain{
   overflow-x: hidden; 
+  width: 100%;
+  height: 100%;
 }
 .page-survey{
+  height: 31.97rem;
   width: 100%;
-  padding: 0rem 0.4rem;
+  padding: 0rem 0.36rem;
+  padding-top:5.8rem;
   text-align: left;
+  padding-bottom: 0.4rem;
+  position: relative;
+}
+.bg-img{
+  position: absolute;
+  top:0rem;
+  left: 0rem;
+  width: 100%;
 }
 input[type='radio'],
 input[type='checkbox']{
   width: 0.4rem;
   height: 0.4rem;
-  border:1px solid #000;
+  background-image: url('../../assets/images/radio.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 input[type='radio']:checked,
 input[type='checkbox']:checked{
-  border:1px solid #ff0000;
+  background-image: url('../../assets/images/radio-active.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 #submit{
   width: 3rem;
@@ -29,18 +46,198 @@ input[type='checkbox']:checked{
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: green;
-  color:#fff;
+  background-color: #ffe26f;
+  color:#000;
   font-size: 0.24rem;
   margin:0 auto;
+  margin-top:0.3rem;
+  position: relative;
+  z-index: 5;
 }
-#name{
-  width: 100%;
-  height: 0.6rem;
-  padding-left:0.2rem;
-  color:#000;
-  border:1px solid #000;
+.sur-c{
+  position: relative;
+  z-index: 5;
 }
 .item{
+  margin:0.2rem 0rem 0.4rem 0rem;
+  width: 5.68rem;
+  border-radius: 0.12rem;
+  padding:0.2rem 0.3rem;
+  background-color: #fff;
+  color:#0561af;
+  font-size:0.28rem;
+  border:2px solid #4f4df4;
+}
+.error{
+  color: #ff0000;
+  display: inline-block;
+  margin-left: 0.2rem;
+}
+
+.item-address{
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+.item-address>div{
+  margin-top:0.2rem;
+  width: 33.3%;
+  height: 0.6rem;
+  border:1px solid #000;
+  border-right: none;
+}
+.item-address>div:nth-last-child(1){
+  border-right: 1px solid #000;
+}
+.loading{
+  position: fixed;
+  top:0rem;
+  left:0rem;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  z-index: 99;
+}
+._loadingZ{
+  -webkit-animation: _loading 2s linear infinite;
+  animation: _loading 2s linear infinite;
+}
+@-webkit-keyframes _loading
+{
+    0%   {-webkit-transform:rotate(0deg);}
+    100% {-webkit-transform:rotate(360deg);}
+}
+@keyframes _loading
+{
+    0%   {transform:rotate(0deg);}
+    100% {transform:rotate(360deg);}
+}
+.pops-suc{
+  position: fixed;
+  top:0rem;
+  left: 0rem;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  color:#fff;
+  font-size: 0.24rem;
+  text-align: center;
+  z-index: 9;
+}
+.pops-already{
+  position: absolute;
+  top:0rem;
+  left: 0rem;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  color:#fff;
+  font-size: 0.24rem;
+  text-align: center;
+}
+.options{
+  width: 100%;
+  height: 0.4rem;
+  position: relative;
+  margin: 0.1rem 0rem;
+}
+.options label{
+  position: absolute;
+  top:0rem;
+  left:0rem;
+  width: 100%;
+  padding-right: 0.5rem;
+}
+.options input{
+  position: absolute;
+  top:0rem;
+  right: 0rem;
+}
+.con-users-news{
+  width: 5.68rem;
+  height:2.89rem;
+  background-image: url('../images/text.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 0.3rem;
+  position: relative;
+  z-index: 5;
+}
+.user-text{
+  color: #000;
+  font-size: 0.24rem;
+}
+.lb{
+  width: 100%;
+  height:0.45rem;
   margin:0.2rem 0rem;
+}
+.user-list1{
+  float: left;
+  width: 40%;
+  height: 0.45rem;
+  position: relative;
+}
+.user-list2{
+  float: right;
+  width: 55%;
+  height: 0.45rem;
+  position: relative;
+}
+.user-list1>div{
+  width: 100%;
+  padding-left: 0.65rem;
+  height: 0.45rem;;
+}
+.user-list2>div{
+  width: 100%;
+  padding-left: 0.65rem;
+  height: 0.45rem;;
+}
+.fields{
+  position: absolute;
+  top:0rem;
+  left: 0rem;
+  width: 0.6rem;
+  height: 0.45rem;
+  line-height: 0.45rem;
+}
+#name,
+#phone,
+#age{
+  width: 100%;
+  height: 0.45rem;
+  padding-left:0.2rem;
+  color:#000;
+  background-color: #fff;
+  border-radius: 0.1rem;
+}
+.sex-list>div{
+  width: 50%;
+  float: left;
+  position: relative;
+  height: 0.45rem;
+}
+.sex-list>div label{
+  width: 100%;
+  text-align:left;
+  height: 0.45rem;
+  line-height: 0.45rem;
+}
+.sex-list>div input{
+  position: absolute;
+  top:0.05rem;
+  right: 0rem;
+}
+.pops-inner{
+  position: absolute;
+  top:30%;
+  left:0.37rem;
+  width: 5.66rem;
+  height: 3.44rem;
+}
+.pops-inner img{
+  width: 5.66rem;
+  height: 3.44rem;
 }
