@@ -21,7 +21,7 @@ export default {
     async getWXShare (sharedata) {
       const url = 'http://api.huandengpai.com/api/weixin/js/config'
       const shareImg = document.getElementsByClassName('share-img')[0].src
-      const shareUrl = window.location.origin + '/goto.html?goto=' + encodeURIComponent('https://mp.weixin.qq.com/s/cRCDMTCmARDJ3MTMDEciCg')
+      const shareUrl = window.location.origin + '/goto.html?goto=' + encodeURIComponent('https://mp.weixin.qq.com/s/sJKMVwHlnjK3-CVYo7jxdA')
       const param = {
         title: sharedata.title,
         desc: sharedata.desc,

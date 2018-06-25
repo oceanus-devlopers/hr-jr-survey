@@ -21,7 +21,7 @@
             </div>
           </div>
           <div class="con-users-news">
-            <div class="user-text">为更好的提供保障服务，请填写以下信息，感谢!</div>
+            <div class="user-text">除了听微课抽奖外，我们还将在填写表单的粉丝中抽取幸运粉丝赠送精美礼品，请确保留下正确信息哦~！</div>
             <div class="user-list-box">
               <div class='lb'>
                 <div class="user-list1">
@@ -112,7 +112,7 @@ export default {
         },
         {
           topic: '5、您会用什么方式了解保险产品、知识？',
-          options: ['网络搜索', '重大疾病', '意外伤害', '住院医疗', '退休养老', '投资理财'],
+          options: ['网络搜索', '朋友介绍', '电话销售', '保险代理人推荐', '保险类APP'],
           id: 5,
           data: [],
           type: 'radio'
